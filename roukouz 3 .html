@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two Column Layout</title>
+	<style>
+		.main-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.column {
+			flex: 1;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.left-column img {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="main-container">
+		<div class="column left-column">
+			<img src="image.jpg" alt="Example Image">
+		</div>
+		<div class="column right-column">
+			<h1>Column Title</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet sagittis nibh, vel facilisis urna. Proin sit amet semper arcu. Nullam dapibus libero at metus faucibus, non maximus metus dignissim.</p>
+		</div>
+	</div>
+</body>
+</html>

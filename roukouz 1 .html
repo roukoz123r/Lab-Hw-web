@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Layout</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: violet;
+			color: #fff;
+			padding: 30px;
+			text-align: center;
+		}
+		.footer {
+			background-color: violet;
+			color: #fff;
+			padding: 30px;
+			text-align: center;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+		}
+		.left {
+			float: left;
+			width: 25%;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.middle {
+			float: left;
+			width: 50%;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.right {
+			float: right;
+			width: 25%;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Header</h1>
+	</div>
+	<div class="left">
+		<h2>Left Section</h2>
+		<p>This is the left section</p>
+	</div>
+	<div class="middle">
+		<h2>Middle Section</h2>
+		<p>This is the middle section.</p>
+	</div>
+	<div class="right">
+		<h2>Right Section</h2>
+		<p>This is the right section.</p>
+	</div>
+	<div class="clearfix"></div>
+	<div class="footer">
+		<p>Footer</p>
+	</div>
+</body>
+</html>
